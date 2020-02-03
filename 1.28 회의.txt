@@ -1,0 +1,4 @@
+A번 https://blog.naver.com/ndb796/221237111220, 네트워크 플로우 문제, MCMF알고리즘
+C번 이분매칭
+G번 convex hull알고리즘
+K번 백트래킹
