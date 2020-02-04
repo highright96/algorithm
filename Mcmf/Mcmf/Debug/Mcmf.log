@@ -1,0 +1,18 @@
+﻿  백준_열혈강호5(11408).cpp
+C:\Users\nsw52\OneDrive\Desktop\Algorithm\Mcmf\Mcmf\백준_열혈강호5(11408).cpp(59,12): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xutility(3814,24): warning C4244: '=': 'const _Ty'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=int
+          ]
+C:\Users\nsw52\OneDrive\Desktop\Algorithm\Mcmf\Mcmf\백준_열혈강호5(11408).cpp(39): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::fill<int*,double>(const _FwdIt,const _FwdIt,const _Ty &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _FwdIt=int *,
+              _Ty=double
+          ]
+  Mcmf.vcxproj -> C:\Users\nsw52\OneDrive\Desktop\Algorithm\Mcmf\Debug\Mcmf.exe
