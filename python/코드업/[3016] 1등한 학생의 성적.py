@@ -1,32 +1,15 @@
-n = int(input())
-students = []
+import operator
+import sys
+input = sys.stdin.readline
+tmp = []
+for i in range(int(input())):
+    tmp.append(input().split())
+tmp.sort(key=lambda x: int(x[1]), reverse=True)
+ans = [tmp[0][0], 1, 1]
+for i in tmp:
+    if int(i[2]) > int(tmp[0][2]):
+        ans[1] += 1
+    if int(i[3]) > int(tmp[0][3]):
+        ans[2] += 1
 
-for i in range(n):
-    name, score1, score2, score3 = input().split()
-    students.append({
-        "name": name,
-        "score1": int(score1),
-        "score2": int(score2),
-        "score3": int(score3)
-    })
-
-s1 = sorted(students, key=(lambda x: x['score1']), reverse=True)
-s2 = sorted(students, key=(lambda x: x['score2']), reverse=True)
-s3 = sorted(students, key=(lambda x: x['score3']), reverse=True)
-
-name = s1[0]["name"]
-rank2 = 1
-rank3 = 1
-for i in range(n):
-
-    if s2[i]["score2"] != s1[0]["score2"]:
-        rank2 += 1
-    if s3[i]["score3"] != s1[0]["score3"]:
-        rank3 += 1
-
-    if s2[i]["name"] == name:
-        ans2 = rank2
-    if s3[i]["name"] == name:
-        ans3 = rank3
-
-print(name, ans2, ans3)
+print(*ans)
