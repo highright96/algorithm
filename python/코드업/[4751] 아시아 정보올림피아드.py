@@ -4,6 +4,7 @@ input = sys.stdin.readline
 
 n = int(input())
 rank = []
+contry = [0] * (n+1)
 for i in range(n):
     con, num, score = map(int, input().split())
     rank.append({
@@ -11,9 +12,6 @@ for i in range(n):
         "num": num,
         "score": score
     })
-
-    if i == n-1:
-        contry = [0] * (n+1)
 
 ans = sorted(rank, key=(lambda x: x["score"]), reverse=True)
 

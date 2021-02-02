@@ -12,3 +12,5 @@ ans = sorted(students, key=(lambda x: x['score']), reverse=True)
 
 for i in range(n2):
     print(ans[i]["name"])
+
+[{}, {}, {}, {}]
