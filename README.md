@@ -11,3 +11,5 @@
 토 - 투 포인터, 시뮬레이션
 
 https://github.com/tony9402/baekjoon
+
+https://covenant.tistory.com/224
