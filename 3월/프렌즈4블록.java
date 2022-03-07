@@ -1,9 +1,3 @@
-/*
-프로그래머스 Level 2
-문제 유형 : 구현, 배열
-걸린 시간 : 47분
-if(c == '0') continue 조건을 찾는데 20분정도 걸림.
-*/
 class Solution {
     
     char[][] arr;
@@ -41,27 +35,9 @@ class Solution {
         for(int i = 1; i < arr.length - 1; i++) {
             for(int j = 1; j < arr[i].length - 1; j++) {
                 char c = arr[i][j];
-                
                 if(c == '0') continue;
-                
-                //왼쪽 위
                 if(c == arr[i-1][j] && c == arr[i][j-1] && c == arr[i-1][j-1]) {
                     delete[i][j] = delete[i-1][j] = delete[i][j-1] = delete[i-1][j-1] = true;
-                }
-                
-                //오른쪽 위
-                if(c == arr[i-1][j] && c == arr[i-1][j+1] && c == arr[i][j+1]) {
-                    delete[i][j] = delete[i-1][j] = delete[i-1][j+1] = delete[i][j+1] = true;
-                }
-                
-                //왼쪽 아래
-                if(c == arr[i][j-1] && c == arr[i+1][j-1] && c == arr[i+1][j]) {
-                    delete[i][j] = delete[i][j-1] = delete[i+1][j-1] = delete[i+1][j] = true;
-                }
-                
-                //오른쪽 아래
-                if(c == arr[i][j+1] && c == arr[i+1][j] && c == arr[i+1][j+1]) {
-                    delete[i][j] = delete[i][j+1] = delete[i+1][j] = delete[i+1][j+1] = true;
                 }
             }
         }
