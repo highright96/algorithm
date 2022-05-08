@@ -6,8 +6,8 @@
 
 /*
 BFS
-시간복잡도 : 
-공간복잡도 : 
+시간복잡도 : O(V + E)
+공간복잡도 : O(V) + O(V)
 */
 class Solution {
     
@@ -57,7 +57,7 @@ class Solution {
 
 /*
 DFS
-시간복잡도 : O(N)  N은 grid 배열의 크기
+시간복잡도 : O(V + E) V : 정점 개수, E : 간선 개수
 공간복잡도 : O(1)
 */
 class Solution {
